@@ -1,0 +1,123 @@
+package hello;
+
+import java.util.Scanner;
+
+public class Operator {
+	public static void main(String[] args) {
+		int i = 10;
+		int j = 5;
+		int a = i + j;
+		int c = i * j;
+		int d = i / j;
+		
+		int a1 = 5;
+		long b1 = 6;
+		int c1 = (int)(a1 + b1);
+		long d1 = a1 + b1;
+		
+		byte a2 = 1;
+		byte b2 = 2;
+		byte c2 = (byte)(a2 + b2);
+		int d2 = a2 + b2;
+		
+		int i3 = 5;
+		int j3 = 2;
+		System.out.println(i3 % j3);
+		
+		int i4 = 5;
+		i4++;
+		System.out.println(i4);
+		
+		int i5 = 5;
+		System.out.println(i5++);
+		System.out.println(i5);
+		int j5 = 5;
+		System.out.println(++j5);
+		System.out.println(j5);
+		
+		int a6 = 5;
+		int b6 = 6;
+		int c6 = 5;
+		System.out.println(a6 > b6);
+		System.out.println(a6 >= c6);
+		System.out.println(a6 == b6);
+		System.out.println(a6 != b6);
+		
+		int i7 = 2;
+		System.out.println(i7 == 1 & i7++ ==  2);
+		System.out.println(i7);
+		int j7 = 2;
+		System.out.println(j7 == 1 && j7++ == 2);
+		System.out.println(j7);
+		
+		int i8 = 2;
+		System.out.println(i8 == 1 | i8++ == 2);
+		System.out.println(i8);
+		int j8 = 2;
+		System.out.println(j8 == 2 || j8++ == 2);
+		System.out.println(j8);
+		
+		boolean b8 = true;
+		System.out.println(b8);
+		System.out.println(!b8);
+		
+		boolean a9 = true;
+		boolean b9 = false;
+		System.out.println(a9 ^ b9);
+		System.out.println(a9 ^ !b9);
+		
+		int i11 = 5;
+		String b11 = (Integer.toBinaryString(i11));
+		System.out.println(i11 + " 的二进制表达是： " + b11);
+		
+		int i12 = 5;
+		int j12 = 6;
+		System.out.println(Integer.toBinaryString(i12));
+		System.out.println(Integer.toBinaryString(j12));
+		System.out.println(i12 | j12);
+		System.out.println(i12 & j12);
+		System.out.println(i12 ^ j12);
+		System.out.println(i12 ^ 0);
+		System.out.println(i12 ^ i12);
+		
+		byte i13 = 5;
+		System.out.println(Integer.toBinaryString(i13));
+		System.out.println(~i13);
+		
+		byte i14 = 6;
+		System.out.println(Integer.toBinaryString(i14));
+		System.out.println(i14 << 1);
+		System.out.println(i14 >> 1);
+		
+		int i15 = -10;
+		System.out.println(Integer.toBinaryString(i15));
+		int j15 = i15 >> 1;
+		System.out.println(Integer.toBinaryString(j15));
+		System.out.println(j15);
+		int k15 = i >>> 1;
+		System.out.println(Integer.toBinaryString(k15));
+		System.out.println(k15);
+		
+		int i16 = 5 + 5;
+		
+		int i17 = 3;
+		i17 += 2;
+		System.out.println(i17);
+		int j17 = 3;
+		j17 = j17 + 2;
+		System.out.println(j17);
+		
+		int i18 = 5;
+		int j18 = 6;
+		int k18 = i18 < j18 ? 99 : 88;
+		System.out.println(k18);
+		
+		Scanner s = new Scanner(System.in);
+		int a19 = s.nextInt();
+		System.out.println("第一个整数：" + a19);
+		int b19 = s.nextInt();
+		System.out.println("第二个整数： " + b19);
+		
+		
+	}
+}

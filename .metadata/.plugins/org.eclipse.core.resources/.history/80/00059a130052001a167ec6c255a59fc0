@@ -1,0 +1,68 @@
+package hello;
+
+public class Operator {
+	public static void main(String[] args) {
+		int i = 10;
+		int j = 5;
+		int a = i + j;
+		int c = i * j;
+		int d = i / j;
+		
+		int a1 = 5;
+		long b1 = 6;
+		int c1 = (int)(a1 + b1);
+		long d1 = a1 + b1;
+		
+		byte a2 = 1;
+		byte b2 = 2;
+		byte c2 = (byte)(a2 + b2);
+		int d2 = a2 + b2;
+		
+		int i3 = 5;
+		int j3 = 2;
+		System.out.println(i3 % j3);
+		
+		int i4 = 5;
+		i4++;
+		System.out.println(i4);
+		
+		int i5 = 5;
+		System.out.println(i5++);
+		System.out.println(i5);
+		int j5 = 5;
+		System.out.println(++j5);
+		System.out.println(j5);
+		
+		int a6 = 5;
+		int b6 = 6;
+		int c6 = 5;
+		System.out.println(a6 > b6);
+		System.out.println(a6 >= c6);
+		System.out.println(a6 == b6);
+		System.out.println(a6 != b6);
+		
+		int i7 = 2;
+		System.out.println(i7 == 1 & i7++ ==  2);
+		System.out.println(i7);
+		int j7 = 2;
+		System.out.println(j7 == 1 && j7++ == 2);
+		System.out.println(j7);
+		
+		int i8 = 2;
+		System.out.println(i8 == 1 | i8++ == 2);
+		System.out.println(i8);
+		int j8 = 2;
+		System.out.println(j8 == 2 || j8++ == 2);
+		System.out.println(j8);
+		
+		boolean b8 = true;
+		System.out.println(b8);
+		System.out.println(!b8);
+		
+		boolean a9 = true;
+		boolean b9 = false;
+		System.out.println(a9 ^ b9);
+		System.out.println(a9 ^ !b9);
+		
+	}
+}

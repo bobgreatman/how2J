@@ -1,0 +1,18 @@
+package hello;
+
+public class Operator {
+	public static void main(String[] args) {
+		int i = 10;
+		int j = 5;
+		int a = i + j;
+		int c = i * j;
+		int d = i / j;
+		
+		int a1 = 5;
+		long b1 = 6;
+		int c1 = (int)(a1 + b1);
+		long d1 = a1 + b1;
+		
+		
+	}
+}

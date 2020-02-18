@@ -1,0 +1,17 @@
+package hello;
+
+public class Variable {
+
+	public static void main(String[] args) {
+		byte b = 1;
+		short s = 200;
+		int i = 300;
+		long l = 400;
+		
+//		byte b2 = 200;
+		
+		char c = 'ÖÐ';
+		char c2 = 'ÖÐ¹ú';
+		char c3 = 'ab';
+	}
+}
