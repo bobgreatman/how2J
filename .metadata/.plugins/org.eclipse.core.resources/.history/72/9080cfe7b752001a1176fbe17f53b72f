@@ -1,0 +1,56 @@
+package hello;
+
+public class ClassAndObject {
+
+	String name;
+	double speed;
+	int gear;
+	
+	public ClassAndObject() {
+		System.out.println("construct method" + this);
+	}
+	
+	public ClassAndObject(String classname) {
+		name = classname;
+	}
+	
+	public void setName(String name) {
+		name = name;
+	}
+	
+	public void setName2(String classname){
+		name = classname;
+	}
+	
+	public void setName3(String name){
+		this.name = name;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new ClassAndObject();
+		ClassAndObject co = new ClassAndObject();
+		
+		ClassAndObject co1 = co;
+		ClassAndObject co2 = co;
+		//co,co1,co2三个引用，都指向同一个对象
+		
+		
+		ClassAndObject occ = new ClassAndObject();
+		occ = new ClassAndObject();
+		//一个引用，同一时间只能指向一个对象
+		
+		
+		ClassAndObject occ1 = new ClassAndObject("haha");
+//		ClassAndObject occ2 = new ClassAndObject(); 提供有参构造方法后，无参的就不能使用了
+		
+		
+		occ1.setName("a");
+		System.out.println(occ1.name);
+		occ1.setName2("b");
+		System.out.println(occ1.name);
+		occ1.setName3("c");
+		System.out.println(occ1.name);
+	}
+
+}

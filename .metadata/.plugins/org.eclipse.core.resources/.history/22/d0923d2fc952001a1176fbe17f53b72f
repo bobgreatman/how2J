@@ -1,0 +1,39 @@
+package hello;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class DateTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Date date = new Date();
+		System.out.println("now:");
+		System.out.println(date);
+		Date date1 = new Date(5000);
+		System.out.println(date1);
+		
+		System.out.println(date.getTime());
+	
+		System.out.println(System.currentTimeMillis());
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss SSS");
+		String str = sdf.format(date);
+		System.out.println(str);
+		
+		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+		String str1 = sdf1.format(date);
+		System.out.println(str1);
+		
+		String str2 = "2020/2/02 6:6:6";
+		try {
+			Date date2 = sdf.parse(str2);
+			System.out.println(d.toString());
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

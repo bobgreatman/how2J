@@ -1,0 +1,67 @@
+package hello;
+
+public class NumberAndString {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int i = 5;
+		Integer it = new Integer(i);
+		int i2 = it.intValue();
+		System.out.println(it);
+		System.out.println(it instanceof Number);
+		
+		Integer it1 = i;
+		int i3 = it;
+		
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		
+		
+		String str = String.valueOf(i);
+		String str1 = it.toString();
+		
+		String str2 = "666";
+		int i4 = Integer.parseInt(str2);
+		System.out.println(i4);
+		
+		
+		float f1 = 5.4f;
+		float f2 = 5.5f;
+		System.out.println(Math.round(f1));
+		System.out.println(Math.round(f2));
+		
+		System.out.println(Math.random());
+		System.out.println((int)(Math.random()*10));
+		
+		System.out.println(Math.sqrt(9));
+		System.out.println(Math.pow(2, 4));
+		
+		System.out.println(Math.PI);
+		System.out.println(Math.E);
+		
+		
+		System.out.printf("%d ",i);
+		System.out.format("%8d %n",i);
+		
+		
+		char c = 'a';
+		Character c1 = c;
+		c = c1;
+		
+		System.out.println(Character.isLetter('a'));
+		System.out.println(Character.isDigit('a'));
+		System.out.println(Character.isWhitespace(' '));
+		System.out.println(Character.isUpperCase('a'));
+		System.out.println(Character.isLowerCase('a'));
+		System.out.println(Character.toUpperCase('a'));
+		System.out.println(Character.toLowerCase('a'));
+		
+//		String a = 'a';
+		String str1 = Character.toString('a');
+		
+		
+		
+	}
+
+}

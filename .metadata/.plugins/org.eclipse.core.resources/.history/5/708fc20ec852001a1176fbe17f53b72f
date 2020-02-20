@@ -1,0 +1,16 @@
+package hello;
+import java.util.Date;
+
+public class Date {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		DateTest date = new DateTest();
+		System.out.println("now:");
+		System.out.println(date);
+		DateTest date1 = new DateTest(5000);
+		System.out.println(date1);
+	}
+
+}

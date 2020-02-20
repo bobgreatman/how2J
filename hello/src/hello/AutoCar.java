@@ -4,6 +4,8 @@ public class AutoCar extends ClassAndObject {
 
 	double acc;
 	
+	
+	
 	public void accelerate(){
 		System.out.println("slow accelerate");
 	}
@@ -20,7 +22,7 @@ public class AutoCar extends ClassAndObject {
 	//改成可变参数
 	public void accelerate(ClassAndObject... andObjects){
 		for (int i = 0;i < andObjects.length;i++){
-			System.out.println("now to " + andObjects.speed);
+			System.out.println("now to " + andObjects[i].speed);
 		}
 	}
 	

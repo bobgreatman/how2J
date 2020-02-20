@@ -1,0 +1,15 @@
+package hello;
+
+public class Date {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Date date = new Date();
+		System.out.println("now:");
+		System.out.println(date);
+		Date date1 = new Date(5000);
+		System.out.println(date1);
+	}
+
+}
