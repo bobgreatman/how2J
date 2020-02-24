@@ -1,0 +1,16 @@
+
+public class Car {
+
+	public String name;
+	protected float acc;
+	
+	public void accelerate(Car c) throws AccException{
+		if (acc > 10) {
+			 throw new AccException(h.name + "acc did't more than 10");
+		}
+	}
+	
+	public String toString() {
+		return name;
+	}
+}

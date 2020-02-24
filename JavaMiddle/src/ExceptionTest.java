@@ -1,0 +1,41 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+
+public class ExceptionTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		File f = new File("d:/test.exe");
+		try {
+			System.out.println("try open d:/test.exe");
+			new FileInputStream(f);
+			System.out.println("successful");
+			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+			Date d = sdf.parse("2016-06-03");
+		}
+		
+//		catch (FileNotFoundException e) {
+//			System.out.println("file not exist");
+//			e.printStackTrace();
+//		} 
+//		catch (ParseException e) {
+//			System.out.println("data format parse wrong");
+//			e.printStackTrace();
+//		}
+		
+		catch(FileNotFoundException | ParseException e) {
+			if (e instanceof FileNotFoundException)
+				System.out.println("file not exist");
+			if (e instanceof ParseException)
+				System.out.println("date format parse wrong");
+		}
+		finally {
+			System.out.println("lastest run");
+		}
+	}
+
+}

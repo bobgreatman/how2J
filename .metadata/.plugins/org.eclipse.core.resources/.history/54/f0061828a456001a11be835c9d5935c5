@@ -1,0 +1,10 @@
+
+public class AccException {
+
+	public AccException() {
+		
+	}
+	public AccException(String msg) {
+		super(msg);
+	}
+}
