@@ -1,0 +1,19 @@
+import java.io.IOException;
+
+public class Streamtest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			File f = new File("d:/test.txt");
+			
+			FileInputStream fis = new FileInputStream(f);
+		} 
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

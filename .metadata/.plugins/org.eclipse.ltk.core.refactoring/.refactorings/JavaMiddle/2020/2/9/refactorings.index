@@ -1,1 +1,10 @@
 1582506874250	Delete element
+1582509792881	Rename type 'TestFile'
+1582592420157	Rename type 'FileTest'
+1582592451489	Rename type 'Streamtest'
+1582592509693	Rename type 'IAndOCharacterStream'
+1582592523110	Rename type 'IAndOStream'
+1582594906639	Rename type 'AccException'
+1582594925994	Rename type 'CustomException'
+1582594952798	Rename type 'ThrowableTest'
+1582594964328	Rename type 'ThrowsTest'

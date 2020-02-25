@@ -1,0 +1,32 @@
+import java.io.File;
+import java.util.Date;
+
+public class TestFile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		File f = new File("d:/Java/test.exe");
+		System.out.println("now file is: " + f);
+		System.out.println("judge exist: " + f.exists());
+		
+		System.out.println("judge exist is Directory: " + f.isDirectory());
+		
+		System.out.println("judge exist is file: " + f.isFile());
+		
+		System.out.println("get file length: " + f.length());
+		
+		long time = f.lastModified();
+		Date d = new Date(time);
+		System.out.println("get file last modify time: " + d);
+		
+		f.setLastModified(0);
+		
+		File f2 = new File("d:/Java/test.exe");
+		f.renameTo(f2);
+		System.out.println("put test.exe rename to haha.exe");
+		
+		System.out.println("attention:need d:\\java exist test.exe,\r\n so get file length,time etc..");
+	}
+
+}
