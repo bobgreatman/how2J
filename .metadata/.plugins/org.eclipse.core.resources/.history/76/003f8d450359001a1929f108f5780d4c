@@ -1,0 +1,39 @@
+import java.util.ArrayList;
+
+public class CollectionFramArrayList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		ArrayList motos = new ArrayList();
+		for (int i = 0; i < 5; i++) {
+			motos.add(new Moto("moto " + i));
+		}
+		System.out.println(motos);
+		Moto specialMoto = new Moto("special moto");
+		
+		motos.add(3, specialMoto);
+		
+		System.out.println(motos.toString());
+		
+		
+		System.out.println(motos.contains(new Moto("moto 1")));
+		System.out.println(motos.contains(specialMoto));
+		
+		
+		System.out.println(motos.get(5));
+		
+		
+		System.out.println("specialmoto position is: " + motos.indexOf(specialMoto));
+		
+		
+		motos.remove(2);
+		motos.remove(specialMoto);
+		
+		
+		motos.set(5, new Moto("moto 5"));
+		
+		
+	}
+
+}
